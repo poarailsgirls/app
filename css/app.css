@@ -37,6 +37,7 @@ body {
   height: 50px;
   color: #fff;
   background-color: #d3360b;
+  /*border: 1px solid white;*/
   font-weight: 800;
   font-size: 1.5em;
   text-decoration: none;
@@ -49,6 +50,7 @@ body {
   font-weight: 800;
   font-size: 1.1em;
   text-align: center;
+  background-color: #d3360b;
 }
 
 .menu a span, .submenu-mapa a span, .submenu-informacoes a span {
