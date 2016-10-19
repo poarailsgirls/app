@@ -28,6 +28,11 @@ body {
 * MENU
 **************/
 
+.selectable-menu:focus {
+  background-color: white;
+  color: #d3360b;
+}
+
 .menu {
   margin: 0px;
 }
