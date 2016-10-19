@@ -29,6 +29,8 @@ body {
   padding-top: 8px;
   height: 50px;
   color: #fff;
+  background-color: #d3360b;
+  border: 1px solid white;
   font-weight: 800;
   font-size: 1.5em;
   text-decoration: none;
@@ -49,21 +51,6 @@ body {
   float: none;
 }
 
-.menu-agenda {
-  background-color: #e0330c;
-}
-
-.menu-mapa, .submenu-mapa a {
-  background-color: #74CED5;
-}
-
-.menu-fotos {
-  background-color: #9de1fe;
-}
-
-.menu-informacoes, .submenu-informacoes a {
-  background-color: #81B681;
-}
 
 
 /*************
