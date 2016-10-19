@@ -18,7 +18,7 @@ var agenda = [
             { hora: '08h30', nome: 'Café da Manhã', local: 'Global' },
             { hora: '09h30', nome: 'Separação dos times', local: 'Global' },
             { hora: '10h00', nome: 'Workshop de HTML e CSS', local: 'ThoughtWorks/Globo' },
-            { hora: '11h30', nome: 'Workshop de Rails', local: 'ThuoughtWorks/Globo' },
+            { hora: '11h30', nome: 'Workshop de Rails', local: 'ThoughtWorks/Globo' },
             { hora: '12h30', nome: 'Almoço', local: 'ThoughtWorks' },
             { hora: '14h00', nome: 'Mão na massa!', local: 'ThoughtWorks/Globo' },
             { hora: '16h30', nome: 'Café da tarde', local: 'ThoughtWorks' },
