@@ -32,6 +32,7 @@ var agenda = [
 ];
 
 var links = [
+    { nome: 'Alda Rocha - Empoderei, e agora?', icone: 'fa fa-youtube', link: 'https://www.youtube.com/watch?v=nYoVKGvn0ms' },
     { nome: 'Código de conduta', icone: 'fa fa-file-text', link: 'http://railsgirls.com/files/porto-alegre/codigo_conduta_2015.pdf' },
     { nome: 'Facebook', icone: 'fa fa-facebook', link: 'https://www.facebook.com/railsgirls' },
     { nome: 'Twitter', icone: 'fa fa-twitter', link: 'https://twitter.com/railsgirls' },
