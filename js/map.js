@@ -1,36 +1,49 @@
+var tecnopuc;
+var global;
+var ondeEstou;
+var map;
+
 function initMap() {
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 15,
-    center: {lat: -30.059601, lng: -51.171705},
+  tecnopuc = new google.maps.LatLng(-30.059601, -51.171705);
+  global = new google.maps.LatLng(-30.059857, -51.170198);
+  map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 18,
+    center: tecnopuc,
     mapTypeControl: false
   });
 
-  var coordsDiv = document.getElementById('coords');
-  map.controls[google.maps.ControlPosition.TOP_CENTER].push(coordsDiv);
-  map.addListener('mousemove', function(event) {
-    coordsDiv.textContent =
-        'lat: ' + Math.round(event.latLng.lat()) + ', ' +
-        'lng: ' + Math.round(event.latLng.lng());
-  });
-
-  map.data.setStyle(function(feature) {
-    return {
-      title: feature.getProperty('name'),
-      optimized: false
-    };
-  });
-  map.data.addGeoJson(cities);
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+      ondeEstou = {
+        lat: position.coords.latitude,
+        lng: position.coords.longitude
+      };
+      map.setCenter(pos);
+    }, function() {});
+  }
 }
 
-var cities = {
-  type: 'FeatureCollection',
-  features: [{
-    type: 'Feature',
-    geometry: {type: 'Point', coordinates: [-30.059601, -51.171705]},
-    properties: {name: 'TecnoPuc'}
-  }, {
-    type: 'Feature',
-    geometry: {type: 'Point', coordinates: [-30.059883, -51.170298]},
-    properties: {name: 'Global'}
-  }]
-};
+$('#ondeEstou').on('click',function(){
+  map.setCenter(ondeEstou);
+});
+
+$('#tecnopuc').on('click',function(){
+  map.setCenter(tecnopuc);
+});
+
+$('#global').on('click',function(){
+  map.setCenter(global);
+});
+
+$('a[href="#tabAgenda"]').on('click',function(){
+  $("#map").hide();
+});
+$('a[href="#tabMapa"]').on('click',function(){
+  $("#map").show();
+});
+$('a[href="#tabFotos"]').on('click',function(){
+  $("#map").hide();
+});
+$('a[href="#tabInformacoesLinks"]').on('click',function(){
+  $("#map").hide();
+});
