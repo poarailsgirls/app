@@ -1,0 +1,288 @@
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0px !important;
+}
+
+.content {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+
+/*************
+* MENU
+**************/
+
+.menu {
+  margin: 0px;
+}
+
+.menu a {
+  padding-top: 8px;
+  height: 50px;
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.submenu-mapa a, .submenu-informacoes a {
+  padding-top: 12px;
+  height: 50px;
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+.menu a span, .submenu-mapa a span, .submenu-informacoes a span {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
+.menu-agenda {
+  background-color: #e0330c;
+}
+
+.menu-mapa, .submenu-mapa a {
+  background-color: #74CED5;
+}
+
+.menu-fotos {
+  background-color: #9de1fe;
+}
+
+.menu-informacoes, .submenu-informacoes a {
+  background-color: #81B681;
+}
+
+
+/*************
+* RODAPE
+**************/
+
+.rodape {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.rodape i {
+  color: #d9534f;
+}
+
+.rodape a {
+  color: #ef5ba1;
+}
+
+
+/*************
+* FOTOS
+**************/
+
+#tabFotos img {
+  margin: 10px;
+}
+
+.bs-callout {
+  padding: 10px;
+  margin: 20px 50px;
+  border: 1px solid #e0330c;
+  border-left-width: 5px;
+  border-radius: 3px;
+  border-left-color: #e0330c;
+  color: #e0330c;
+}
+
+.bs-callout h4 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-weight: 800;
+}
+
+.bs-callout p:last-child {
+  margin-bottom: 0;
+}
+
+#tabFotos .carregar-mais {
+  padding: 10px;
+  margin: 20px 50px;
+  border: 1px solid #e0330c;
+  border-left-width: 5px;
+  border-radius: 3px;
+  border-left-color: #e0330c;
+  background: white;
+  color: #e0330c;
+}
+
+.gallery .gallery-foto:last-child {
+  /*clear: both;*/
+}
+
+/*************
+* AGENDA, DESAFIOS, ATIVIDADES ESPECIAIS
+**************/
+
+.tabTitle {
+  text-align: center;
+  font-weight: 800;
+  color: #e0330c;
+  margin-bottom: 0px;
+}
+
+.timeline > li > .timeline-panel {
+  text-align: right;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel {
+  text-align: left;
+}
+
+
+/*************
+* MAPA
+**************/
+
+#tabMapa #mapa {
+  padding: 0px;
+  overflow: auto;
+}
+
+
+/*************
+* EXTRAS
+**************/
+
+#tabInformacoesAtividades h1 {
+  text-align: center;
+  font-weight: 800;
+  color: #81B681;
+  margin-bottom: 0px;
+}
+
+#tabInformacoesAtividades .timeline-badge {
+  background-color: #81B681;
+}
+
+#tabInformacoesContatos .bs-callout {
+  border: 1px solid #81B681;
+  border-left-width: 5px;
+  border-left-color: #81B681;
+  color: #81B681;
+}
+
+#tabInformacoesContatos h1 {
+  font-size: 28px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #81B681;
+}
+
+#tabInformacoesContatos small {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+#tabInformacoesContatos .box, #tabInformacoesLinks .box {
+  width: 98%;
+  margin-bottom: 20px;
+  float: left;
+  border: 1px solid #d4d4d4;
+  border-radius: 2px;
+  padding: 20px;
+  position: relative;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+
+#tabInformacoesContatos .box div {
+  margin-top: 10px;
+}
+
+#tabInformacoesLinks {
+  padding-top: 30px;
+}
+
+#tabInformacoesLinks a {
+  font-size: 40px;
+  text-align: center;
+  color: #81B681
+}
+
+
+/*************
+* MODAL
+**************/
+
+.modal-backdrop {
+  opacity: 0.9 !important;
+}
+
+#modal {
+  color: #fff;
+}
+
+#modal a {
+  color: #e0330c;
+  text-decoration: none;
+}
+
+#modal img {
+  margin-top: 40px;
+  max-width: 80vw;
+}
+
+
+/*************
+* RESPONSIVE
+**************/
+.col-xs-17 {
+  width: 14.285714286%;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 10px;
+  }
+  .menu a {
+    padding-top: 15px;
+    font-size: 1.3em;
+  }
+  .submenu-mapa a, .submenu-informacoes a {
+    padding-top: 15px;
+    font-size: 0.8em;
+  }
+  .submenu-informacoes a {
+    padding-top: 10px;
+    height: 35px;
+  }
+  #tabAgenda h1, #tabDesafios h1, #tabAtividadesEspeciais h1, #tabInformacoesAtividades h1 {
+    font-size: 28px;
+  }
+  .timeline > li > .timeline-panel {
+    text-align: left;
+  }
+  .bs-callout {
+    margin: 20px 15px;
+  }
+  #tabFotos img {
+    margin: 2px;
+  }
+  #tabInformacoesContatos .box, #tabInformacoesLinks .box {
+    width: 100%;
+  }
+  #tabInformacoesLinks a {
+    font-size: 22px;
+  }
+  #modal img {
+    margin-top: 40%;
+  }
+}
