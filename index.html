@@ -46,15 +46,12 @@
           <div class="tab-pane fade in" id="tabAtividadesEspeciais"></div>
           <div class="tab-pane fade in text-center" id="tabFotos"></div>
           <div class="tab-pane fade in text-center submenu-mapa" id="tabMapa">
-            <a class="col-xs-3 col-sm-3" href="javascript:gotoMapa(650, 1350)"><span>ThoughtWorks</span></a>
-            <a class="col-xs-3 col-sm-3" href="javascript:gotoMapa(650, 400)"><span>Globo</span></a>
-            <a class="col-xs-3 col-sm-3" href="javascript:gotoMapa(650, 400)"><span>Global</span></a>
-            <div class="col-xs-12" id="mapa">
-              <img src="img/map.jpg" class="center-block">
-            </div>
+            <a class="col-xs-4 col-sm-4" href="javascript:gotoMapa(650, 1350)"><span>ThoughtWorks</span></a>
+            <a class="col-xs-4 col-sm-4" href="javascript:gotoMapa(650, 400)"><span>Globo</span></a>
+            <a class="col-xs-4 col-sm-4" href="javascript:gotoMapa(650, 400)"><span>Global</span></a>
+                <div id="map"></div>
           </div>
-          <div class="tab-pane fade in" id="tabInformacoesLinks">
-          </div>
+          <div class="tab-pane fade in" id="tabInformacoesLinks"></div>
         </div>
       </div>
       <div class="text-center rodape">
@@ -87,6 +84,20 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 ga('create', 'UA-85535554-1', 'auto');
 ga('send', 'pageview');
     </script>
+       <script>
+      function initMap() {
+        var uluru = new google.maps.LatLng(-30.0596025, -51.1717573);
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 19,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwcfNL0o2h3wSVnAlMkM6leZj3W2ell-g&callback=initMap">
+    </script>
   </body>
-
 </html>
