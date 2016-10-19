@@ -16,6 +16,13 @@ body {
   padding: 0px !important;
 }
 
+/*************
+* LOGO
+**************/
+.rails-logo {
+  background-color: #d3360b;
+  padding: 10px 0px 10px 0px;
+}
 
 /*************
 * MENU
@@ -30,7 +37,6 @@ body {
   height: 50px;
   color: #fff;
   background-color: #d3360b;
-  border: 1px solid white;
   font-weight: 800;
   font-size: 1.5em;
   text-decoration: none;
