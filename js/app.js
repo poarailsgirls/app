@@ -15,8 +15,8 @@ var agenda = [
     {
         data: 'Dia 22/10 - Sábado',
         slots: [
-            { hora: '08h30', nome: 'Café da Manhã', local: 'Global - Auditório' },
-            { hora: '09h30', nome: 'Separação dos times', local: 'Global - Auditório' },
+            { hora: '08h30', nome: 'Café da Manhã', local: 'ThoughtWorks' },
+            { hora: '09h30', nome: 'Separação dos times', local: 'ThoughtWorks' },
             { hora: '10h00', nome: 'Workshop de HTML e CSS', local: 'ThoughtWorks/Globo/DBServer' },
             { hora: '11h30', nome: 'Workshop de Rails', local: 'ThoughtWorks/Globo/DBServer' },
             { hora: '12h30', nome: 'Almoço', local: 'ThoughtWorks' },
