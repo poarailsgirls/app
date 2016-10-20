@@ -26,7 +26,6 @@ function initMap() {
   var infowindow = new google.maps.InfoWindow();
 
   for (i = 0; i < locations.length; i++) {
-    console.log(locations[i]);
     var marker = new google.maps.Marker({
       position: locations[i][1],
       map: map,

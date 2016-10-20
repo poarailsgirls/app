@@ -74,7 +74,6 @@ var loadInstagramHashtags = function() {
             $(response.data).each(function (i, e) {
                 $('#tabFotos .gallery').append('<div class="gallery-foto col-xs-6 col-sm-3 col-md-2 col-lg-1"> <a class="" href="javascript:showModal(\'' + e.images.standard_resolution.url + '\', \'' + e.user.username + '\', \'' + ((e.caption == null) ? '' : e.caption.text) + '\')"><img src="' + e.images.thumbnail.url + '" class="img-rounded img-responsive"></a> </div>')
             });
-            console.log(response);
             if(!instagramPagination.next_max_id)
                 $('.carregar-mais').hide();
         },
@@ -97,7 +96,6 @@ var loadMoreInstagram = function() {
         dataType: 'json',
         type: 'GET',
         success: function (response) {
-            console.log(response);
             instagramPagination = response.pagination;
             $(response.data).each(function (i, e) {
                 $('#tabFotos .gallery').append('<div class="gallery-foto"> <a class="col-xs-6 col-sm-3 col-md-2 col-lg-1" href="javascript:showModal(\'' + e.images.standard_resolution.url + '\', \'' + e.user.username + '\', \'' + ((e.caption == null) ? '' : e.caption.text) + '\')"><img src="' + e.images.thumbnail.url + '" class="img-rounded img-responsive"></a> </div>')
@@ -115,7 +113,6 @@ var loadFotosTwitter = function() {
         dataType: 'json',
         type: 'GET',
         success: function (response) {
-            console.log(response);
             $(response.tweets).each(function (i, e) {
                 $('#tabFotos .gallery').append('<div class="gallery-foto"> <a class="col-xs-6 col-sm-3 col-md-2 col-lg-1" href="javascript:showModal(\'' + e.image + '\', \'' + e.screen_name+ '\', \'' + ((e.text == null) ? '' : e.text) + '\')"><img src="' + e.image + '" class="img-rounded img-responsive"></a></div>')
             });
