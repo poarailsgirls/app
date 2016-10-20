@@ -30,8 +30,7 @@ pxb/ody {
 /*************
 * MENU
 **************/
-
-.selectable-menu:focus {
+.menu .active-menu, .submenu-mapa .active-menu {
   background-color: white;
   color: #d3360b;
 }
