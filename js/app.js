@@ -4,19 +4,19 @@ var agenda = [
     {
         data: 'Dia 21/10 - Sexta-feira',
         slots: [
-            { hora: '18h30', nome: 'Lanche', local: 'Global' },
-            { hora: '19h30', nome: 'Abertura: Mas o que é Rails Girls? O que vamos fazer aqui?', local: 'Global' },
-            { hora: '20h00', nome: 'Roles de TI (BA, QA, EXU, PM e DEV)', local: 'Global' },
-            { hora: '21h00', nome: 'Ice Breaker - Grupos de Interesse', local: 'Global' },
-            { hora: '21h20', nome: 'Instalação do Ambiente', local: 'Global' },
-            { hora: '22h30', nome: 'Beijo, abraço e te vejo amanhã!', local: 'Global' }
+            { hora: '18h30', nome: 'Lanche', local: 'Global - Auditório' },
+            { hora: '19h30', nome: 'Abertura: Mas o que é Rails Girls? O que vamos fazer aqui?', local: 'Global - Auditório' },
+            { hora: '20h00', nome: 'Roles de TI (BA, QA, EXU, PM e DEV)', local: 'Global - Auditório' },
+            { hora: '21h00', nome: 'Ice Breaker - Grupos de Interesse', local: 'Global - Auditório' },
+            { hora: '21h20', nome: 'Instalação do Ambiente', local: 'Global - Auditório' },
+            { hora: '22h30', nome: 'Beijo, abraço e te vejo amanhã!', local: 'Global - Auditório' }
         ]
     },
     {
         data: 'Dia 22/10 - Sábado',
         slots: [
-            { hora: '08h30', nome: 'Café da Manhã', local: 'Global' },
-            { hora: '09h30', nome: 'Separação dos times', local: 'Global' },
+            { hora: '08h30', nome: 'Café da Manhã', local: 'Global - Auditório' },
+            { hora: '09h30', nome: 'Separação dos times', local: 'Global - Auditório' },
             { hora: '10h00', nome: 'Workshop de HTML e CSS', local: 'ThoughtWorks/Globo/DBServer' },
             { hora: '11h30', nome: 'Workshop de Rails', local: 'ThoughtWorks/Globo/DBServer' },
             { hora: '12h30', nome: 'Almoço', local: 'ThoughtWorks' },
@@ -24,9 +24,9 @@ var agenda = [
             { hora: '16h30', nome: 'Café da tarde', local: 'ThoughtWorks' },
             { hora: '17h00', nome: 'Mão na massa de novo!', local: 'ThoughtWorks/Globo/DBServer' },
             { hora: '18h30', nome: 'Retrospectiva', local: 'ThoughtWorks/Globo/DBServer' },
-            { hora: '19h00', nome: 'Palestra HP', local: 'Global' },
-            { hora: '19h30', nome: 'Fishbowl: Mulheres na TI', local: 'Global' },
-            { hora: '20h30', nome: 'Fechamento', local: 'Global' }
+            { hora: '19h00', nome: 'Palestra HP', local: 'Global - Auditório' },
+            { hora: '19h30', nome: 'Fishbowl: Mulheres na TI', local: 'Global - Auditório' },
+            { hora: '20h30', nome: 'Fechamento', local: 'Global - Auditório' }
         ]
     }
 ];
