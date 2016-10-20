@@ -6,7 +6,7 @@ var agenda = [
         slots: [
             { hora: '18h30', nome: 'Lanche', local: 'Global - Auditório' },
             { hora: '19h30', nome: 'Abertura: Mas o que é Rails Girls? O que vamos fazer aqui?', local: 'Global - Auditório' },
-            { hora: '20h00', nome: 'Roles de TI (BA, QA, EXU, PM e DEV)', local: 'Global - Auditório' },
+            { hora: '20h00', nome: 'Roles de TI (BA, QA, UX, PM e DEV)', local: 'Global - Auditório' },
             { hora: '21h00', nome: 'Ice Breaker - Grupos de Interesse', local: 'Global - Auditório' },
             { hora: '21h20', nome: 'Instalação do Ambiente', local: 'Global - Auditório' },
             { hora: '22h30', nome: 'Beijo, abraço e te vejo amanhã!', local: 'Global - Auditório' }
