@@ -20,7 +20,7 @@ function initMap() {
 
   map = new google.maps.Map(document.getElementById('map'), {
     zoom: 18,
-    center: tecnopuc,
+    center: ondeEstou,
   });
 
   var infowindow = new google.maps.InfoWindow();
@@ -71,4 +71,8 @@ $('a[href="#tabFotos"]').on('click',function(){
 });
 $('a[href="#tabInformacoesLinks"]').on('click',function(){
   $("#map").hide();
+});
+
+$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+  initMap();
 });
