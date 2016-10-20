@@ -42,6 +42,7 @@ $(function () {
     loadTimeline(agenda, '#tabAgenda');
     loadFotosInstagram();
     loadLinks();
+    attachMenuListeners($('.selectable-menu'));
 });
 
 var loadTimeline = function (list, div) {
@@ -145,3 +146,27 @@ var gotoMapa = function (x, y) {
     $('html, body').animate({ scrollTop: x + 'px' }, 800);
     $('#mapa').animate({ scrollLeft: y + 'px' }, 800);
 }
+
+var addActiveMenuClass = function(el) {
+  el.classList.add('active-menu');
+};
+
+var removeActiveMenuClass = function(el) {
+  el.classList.remove('active-menu');
+};
+
+var clearActiveMenus = function(selectableMenus) {
+  $.each(selectableMenus, function(i, el) {
+    removeActiveMenuClass(el);
+  });
+};
+
+var attachMenuListeners = function(selectableMenus) {
+  $.each(selectableMenus, function(i, el) {
+    el.addEventListener('click', function() {
+      clearActiveMenus(selectableMenus);
+      addActiveMenuClass(el);
+    });
+  });
+};
+
